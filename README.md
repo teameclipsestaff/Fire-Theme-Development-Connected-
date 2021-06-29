@@ -34,6 +34,8 @@ cd dawn
 shopify theme serve
 ```
 
+Yo
+
 >:information_source: You'll need access to a Shopify store in order to get started with theme development. If you don't already have one, you can set up a [development store](https://shopify.dev/themes/tools/development-stores).
 
 ## Staying up to date with Dawn changes
