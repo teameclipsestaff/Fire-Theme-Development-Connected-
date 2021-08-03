@@ -58,7 +58,7 @@ header .wrapper .cart a{
         <div class="menu-container">
           <ul>
             {%- for link in section.settings.menu.links -%}
-            <li><a href="/">Home</a></li>
+            <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
             <li><a href="/">Tees</a></li>
             <li><a href="/">Hoodies</a></li>
             <li><a href="/">Accessories</a></li>
