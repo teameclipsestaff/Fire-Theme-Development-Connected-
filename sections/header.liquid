@@ -58,9 +58,13 @@ header .wrapper .cart a{
     width: 100%;
     top: 0;
     left: -100%;
+    transition: 0.5s ease-in-out;
     background-color: #000000;
     z-index: 998;
     margin-top: 0;
+  }
+  header .wrapper .menu-container.show{
+    left: 0;
   }
  header .wrapper .menu-container ul{
     flex-direction: column;
@@ -100,7 +104,7 @@ header .wrapper .cart a{
       </div>
     </header>
 <script>
-  document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+  document.querySelector('.ham-icon').addEventListener('click', () => document.querySelector('.menu-container').classList.toggle('show'));
 </script>
 {% schema %}
 {
