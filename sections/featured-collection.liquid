@@ -39,36 +39,8 @@ main .wrapper .featured-collection-section .grid .grid-product img{
               <img src="{{ image.src | img_url }}" />
               {% endfor %}
               {% endif %}
-              <h3>{{ product_card_product.title }}</h3>
+              <h3>{{ product.title | escape }}</h3>
               <p>{{ product.price | money }}</p>
-            </div>
-          </a>
-          <a href="/">
-            <div class="grid-product">
-              <img src="https://cdn.shopify.com/s/files/1/2321/5947/products/final_0063_Group31_300x.jpg?v=1627323147" />
-              <h3>Product Title</h3>
-              <p>$0.00</p>
-            </div>
-          </a>
-          <a href="/">
-            <div class="grid-product">
-              <img src="https://cdn.shopify.com/s/files/1/2321/5947/products/final_0063_Group31_300x.jpg?v=1627323147" />
-              <h3>Product Title</h3>
-              <p>$0.00</p>
-            </div>
-          </a>
-          <a href="/">
-            <div class="grid-product">
-              <img src="https://cdn.shopify.com/s/files/1/2321/5947/products/final_0063_Group31_300x.jpg?v=1627323147" />
-              <h3>Product Title</h3>
-              <p>$0.00</p>
-            </div>
-          </a>
-          <a href="/">
-            <div class="grid-product">
-              <img src="https://cdn.shopify.com/s/files/1/2321/5947/products/final_0063_Group31_300x.jpg?v=1627323147" />
-              <h3>Product Title</h3>
-              <p>$0.00</p>
             </div>
           </a>
           </div>
