@@ -82,11 +82,14 @@ header .wrapper .cart a{
           </ul>
         </div>
         <div class="cart">
+          <a href="/"><i class="fas fa-bars"></i></a>
           <a href="/"><i class="fas fa-shopping-cart"></i> ({{ cart.item_count }})</a>
         </div>
       </div>
     </header>
-
+<script>
+  document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+</script>
 {% schema %}
 {
   "name": "t:sections.header.name",
