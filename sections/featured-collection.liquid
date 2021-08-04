@@ -35,7 +35,7 @@ main .wrapper .featured-collection-section .grid .grid-product img{
           <a href="{{ product.url | within: collection }}">
             <div class="grid-product">
               {% if product.featured_image != blank %}
-              <img src="{{ img_url }}" />
+              <img data-src="{{ img_url }}" />
               {% endif %}
               <h3>{{ product_card_product.title }}</h3>
               <p>{{ product.price | money }}</p>
