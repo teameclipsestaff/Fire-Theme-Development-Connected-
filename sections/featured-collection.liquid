@@ -35,11 +35,8 @@ main .wrapper .featured-collection-section .grid .grid-product img{
           <a href="{{ product.url | within: collection }}">
             <div class="grid-product">
               {% if product.featured_image != blank %}
-              {% render 'responsive-image' with
-            image: product.featured_image,
-            height: 20rem %}
-              {% endif %}
               <img src="{{ product_card_product.featured_media | img_url }}" />
+              {% endif %}
               <h3>{{ product_card_product.title }}</h3>
               <p>{{ money_price }}</p>
             </div>
