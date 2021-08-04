@@ -34,7 +34,7 @@ main .wrapper .featured-collection-section .grid .grid-product img{
             {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <a href="{{ product_card_product.url | default: '#' }}">
             <div class="grid-product">
-              <img src="https://cdn.shopify.com/s/files/1/2321/5947/products/final_0063_Group31_300x.jpg?v=1627323147" />
+              <img src="{{ product_card_product.featured_media | img_url }}" />
               <h3>Product Title</h3>
               <p>$0.00</p>
             </div>
