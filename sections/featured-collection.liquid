@@ -1,4 +1,31 @@
-
+<style>
+main .wrapper .featured-collection-section{
+  min-height: 100vh;
+  position: relative;
+}
+main .wrapper .featured-collection-section h1{
+  text-align: center;
+}
+main .wrapper .featured-collection-section .grid{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+}
+main .wrapper .featured-collection-section .grid a{
+  text-decoration: none;
+  color: var(--main-link-clr);
+}
+main .wrapper .featured-collection-section .grid .grid-product img{
+  height: 20rem;
+}
+@media only screen and (max-width: 1000px) {
+  main .wrapper .featured-collection-section .grid{
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 <div class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
   <div class="{% if section.settings.show_view_all and section.settings.swipe_on_mobile %}title-wrapper-with-link{% endif %}{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
