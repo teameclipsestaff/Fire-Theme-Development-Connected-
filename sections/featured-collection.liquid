@@ -32,13 +32,6 @@ main .wrapper .featured-collection-section .grid .grid-product img{
           <h1>Featured Collection</h1>
           <div class="grid">
             {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
-          <a href="{{ product_card_product.url | default: '#' }}">
-            <div class="grid-product">
-              <img src="{{ product_card_product.featured_media | img_url }}" />
-              <h3>{{ product_card_product.title }}</h3>
-              <p>{{ money_price }}</p>
-            </div>
-          </a>
           <a href="/">
             <div class="grid-product">
               <img src="https://cdn.shopify.com/s/files/1/2321/5947/products/final_0063_Group31_300x.jpg?v=1627323147" />
