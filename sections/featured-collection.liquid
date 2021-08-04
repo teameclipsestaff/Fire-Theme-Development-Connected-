@@ -38,7 +38,7 @@ main .wrapper .featured-collection-section .grid .grid-product img{
               <img src="{{ product_card_product.featured_media | img_url }}" />
               {% endif %}
               <h3>{{ product_card_product.title }}</h3>
-              <p>{{ money_price }}</p>
+              <p>{{ product.price | money }}</p>
             </div>
           </a>
           <a href="/">
