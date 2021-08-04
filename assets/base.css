@@ -9,3 +9,8 @@
   --main-btn-background: #000000;
   --main-btn-txt-clr: #ffffff;
 }
+  
+  main .wrapper{
+  width: 80%;
+  margin: auto;
+}
