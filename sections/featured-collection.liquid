@@ -30,6 +30,7 @@ main .wrapper .featured-collection-section .grid .grid-product img{
         <!-- Featured Collection -->
         <div class="featured-collection-section">
           <h1>Featured Collection</h1>
+          <a style="text-decoration: none;" href="{{ collection.url }}">View All</a>
           <div class="grid">
             {%- for product in section.settings.collection.products limit: section.settings.products_to_show limit:20 -%}
           <a href="{{ product.url | within: collection }}">
