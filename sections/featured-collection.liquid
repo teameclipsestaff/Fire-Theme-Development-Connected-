@@ -35,7 +35,7 @@ main .wrapper .featured-collection-section .grid .grid-product img{
           <a href="{{ product.url | within: collection }}">
             <div class="grid-product">
               {% if product.featured_image != blank %}
-              {% for image in product.image %}
+              {% for image in product.featured_image %}
               <img src="{{ product.featured_image | img_url: '512x512' }}" />
               {% endfor %}
               {% endif %}
