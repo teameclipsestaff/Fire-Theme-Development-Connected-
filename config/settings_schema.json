@@ -255,6 +255,14 @@
     "name": "License (Important)",
     "settings": [
       {
+        "type": "header",
+        "content": "License Key"
+      },
+      {
+        "type": "paragraph",
+        "content": "Thanks for purchasing Fire Theme. In order to use our theme you MUST enter your license key."
+      },
+      {
         "type": "text",
         "id": "theme_activation_license",
         "label": "License Key",
