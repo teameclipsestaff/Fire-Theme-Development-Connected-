@@ -31,7 +31,7 @@ main .wrapper .featured-collection-section .grid .grid-product img{
         <div class="featured-collection-section">
           <h1>Featured Collection</h1>
           <div class="grid">
-            {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+            {%- for product in section.settings.collection.products limit: section.settings.products_to_show limit:9 -%}
           <a href="{{ product.url | within: collection }}">
             <div class="grid-product">
               {% if product.featured_image != blank %}
