@@ -119,7 +119,7 @@ footer .wrapper .footer-copyright{
   </div>
   </div>
 </footer>
-<footer class="footer color-{{ section.settings.color_scheme }}">
+<div class="none color-{{ section.settings.color_scheme }}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -419,7 +419,7 @@ footer .wrapper .footer-copyright{
       </div>
     </div>
   </div>
-</footer>
+</div>
 
 {% javascript %}
   class LocalizationForm extends HTMLElement {
