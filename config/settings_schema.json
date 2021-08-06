@@ -271,6 +271,14 @@
         "content": "If you DO NOT enter a valid license key your online store will display nothing and your theme will be practically useless."
       },
       {
+        "type": "paragraph",
+        "content": "If our system detects a single license key is being used on more than one online store all associated stores will be sunject to termination."
+      },
+      {
+        "type": "paragraph",
+        "content": "If you have any questions or concerns reguarding our licensing please read our license terms and if you cannot find an answer or solution to a problem contact our licensing team. YOUR PURCHASE INCLUDES FREE SUPPORT, but inorder to recieve this support you must know your account ID and theme license code."
+      },
+      {
         "type": "text",
         "id": "theme_activation_license",
         "label": "License Key",
