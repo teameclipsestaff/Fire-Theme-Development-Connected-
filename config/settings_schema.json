@@ -250,5 +250,14 @@
         "info": "t:settings_schema.social-media.settings.social_vimeo_link.info"
       }
     ]
+  },
+  {
+    "name": "License (Important)",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.social-media.settings.header__1.content"
+      }
+    ]
   }
 ]
