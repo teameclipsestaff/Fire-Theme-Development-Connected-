@@ -263,6 +263,14 @@
         "content": "Thanks for purchasing Fire Theme. In order to use our theme you MUST enter your license key."
       },
       {
+        "type": "paragraph",
+        "content": "If you forget your license key, login to our website, and go to your account section to view your purchases and license key."
+      },
+      {
+        "type": "paragraph",
+        "content": "If you DO NOT enter a valid license key your online store will display nothing and your theme will be practically useless."
+      },
+      {
         "type": "text",
         "id": "theme_activation_license",
         "label": "License Key",
