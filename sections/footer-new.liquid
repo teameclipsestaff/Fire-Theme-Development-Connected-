@@ -1,11 +1,130 @@
+<footer>
+  <div class="wrapper">
+    <div class="newsletter-form">
+      <h1>Newsletter</h1>
+      <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST">
+        <input type="hidden" name="g" value="LIST_ID_HERE">
+        <input type="email" value="" name="email" id="k_id_email" placeholder="Your email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="footer-content">
+      <div class="content">
+      <h1>Welcome</h1>
+      <p>Welcome to our official website</p>
+      <h3>Contact Us:</h3>
+      <p>support@aplusthemes.com</p>
+    </div>
+    <div class="content">
+      <h1>Legal:</h1>
+      <ul>
+        <li><a href="/">Terms</a></li>
+        <li><a href="/">Privacy</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Follow Us:</h1>
+      <ul class="social">
+        <li><a href="/"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="/"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    &copy; 2021 AJMerch<br>Powered by Shopify
+  </div>
+  </div>
+</footer>
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Footer",
     "settings": []
   }
 {% endschema %}
 
 {% stylesheet %}
+footer{
+  position: relative;
+  min-height: 50vh;
+  background-color: #000000;
+}
+footer .wrapper{
+  width: 80%;
+  margin: auto;
+}
+footer .wrapper .newsletter-form{
+  text-align: center;
+  min-height: 200px;
+  border-bottom: 1px solid #ffffff;
+  padding-top: 20px
+}
+footer .wrapper .newsletter-form h1{
+  color: #ffffff;
+}
+footer .wrapper .newsletter-form form input[type=email]{
+  padding: 10px 20px;
+  border: 0px;
+  height: 50px;
+  width: 300px;
+}
+footer .wrapper .newsletter-form form button[type=submit]{
+  padding: 10px;
+  border: 0px;
+  cursor: pointer;
+  height: 50px;
+}
+footer .wrapper .footer-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer .wrapper .footer-content .content{
+  text-align: center;
+}
+footer .wrapper .footer-content .content h1{
+  color: #ffffff;
+  font-size: 40px;
+}
+footer .wrapper .footer-content .content h3{
+  color: #ffffff;
+  font-size: 25px;
+}
+footer .wrapper .footer-content .content p{
+  color: #ffffff;
+}
+footer .wrapper .footer-content .content ul{
+  list-style: none;
+  padding: 0;
+}
+footer .wrapper .footer-content .content .social{
+  list-style: none;
+  padding: 0;
+}
+footer .wrapper .footer-content .content .social li{
+  display: inline-block;
+  padding: 10px;
+}
+footer .wrapper .footer-contnet .content .social li a{
+  
+}
+footer .wrapper .footer-content .content ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px
+}
+footer .wrapper .footer-copyright{
+  padding-top: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+  footer .wrapper .footer-content {
+    grid-template-columns: 1fr;
+  }
+  footer .wrapper .footer-content .content{
+  padding-bottom: 10px;
+  }
+}
 {% endstylesheet %}
 
 {% javascript %}
