@@ -35,12 +35,14 @@ main .wrapper .featured-collection-section .grid .grid-product img{
           <a href="{{ product.url | within: collection }}">
             <div class="grid-product">
               {% if product.featured_image != blank %}
-               {% for image in product.images %}
-              <img src="{{ product.featured_image | img_url }}" />
-               {% endfor %}
+               {% include 'res-img' with
+            image: product.featured_image,
+            max_width: 480,
+            max_height: 480
+          %}
+              {% endif %}
               <h3>{{ product.title | escape }}</h3>
               <p>{{ product.price | money }}</p>
-              {% endif %}
             </div>
           </a>
           {%- endfor -%}
