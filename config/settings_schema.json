@@ -255,8 +255,10 @@
     "name": "License (Important)",
     "settings": [
       {
-        "type": "header",
-        "content": "t:settings_schema.social-media.settings.header__1.content"
+        "type": "text",
+        "id": "theme_activation_license",
+        "label": "License Key",
+        "info": "Your license key obtained from our website at time of purchase"
       }
     ]
   }
