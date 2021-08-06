@@ -38,9 +38,9 @@ main .wrapper .featured-collection-section .grid .grid-product img{
                {% for image in product.images %}
               <img src="{{ product.featured_image | img_url }}" />
                {% endfor %}
-              {% endif %}
               <h3>{{ product.title | escape }}</h3>
               <p>{{ product.price | money }}</p>
+              {% endif %}
             </div>
           </a>
           {%- endfor -%}
